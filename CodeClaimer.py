@@ -1,13 +1,15 @@
 from telethon import TelegramClient, events
 import re
 import webbrowser
+import time
 
 # Your API_ID and API_HASH (replace with actual values)
-API_ID = '29718403'  # Replace with your API_ID
-API_HASH = '52b60b2e0b83afa66a35d8c68d0e859a'  # Replace with your API_HASH
+API_ID = '23289938'  # Replace with your API_ID
+API_HASH = 'e700b97900cb151dd394640b5cc93ffb'  # Replace with your API_HASH
 
 # The name of the session file, it will save your login session
-SESSION_NAME = 'referral_code_reader'
+SESSION_NAME = 'referral_code_reader_' + str(time.time())  # Add a timestamp or unique identifier
+
 
 # Create the Telegram client
 client = TelegramClient(SESSION_NAME, API_ID, API_HASH)
